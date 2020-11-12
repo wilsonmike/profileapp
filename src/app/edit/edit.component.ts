@@ -11,13 +11,13 @@ import { ProfileService } from '../profile.service';
 })
 export class EditComponent implements OnInit {
   userProfile: UserProfile = null;
-  constructor(private router: Router, private service: ProfileService) {}
+  constructor(private service: ProfileService, private router: Router) {}
 
   ngOnInit(): void {
     this.userProfile = this.service.getUserProfile();
   }
-
-  goToItems() {
+  setUserProfile = (form: NgForm): void => {
+    this.service.setUserProfile(form.value);
     this.router.navigate(['/profile']);
-  }
+  };
 }

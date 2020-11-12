@@ -16,9 +16,7 @@ export class ProfileService {
   getUserProfile = () => {
     return this.userProfile;
   };
-  setUserProfile = (form: NgForm, userProfile: UserProfile) => {
-    userProfile.name = form.value.name;
-    userProfile.contact = form.value.contact;
-    userProfile.bio = form.value.bio;
+  setUserProfile = (userProfile: UserProfile): void => {
+    this.userProfile = userProfile;
   };
 }
