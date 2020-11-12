@@ -1,10 +1,15 @@
 <form class="edit-form">
   <p>Use the form below to update your profile</p>
   <label class="edit-label" for="name">Name</label>
-  <input type="text" name="name" id="name" />
+  <input type="text" name="name" id="name" [ngModel]="userProfile.name" />
   <label class="edit-label" for="contact">Contact</label>
-  <input type="text" name="contact" id="contact" />
+  <input
+    type="text"
+    name="contact"
+    id="contact"
+    [ngModel]="userProfile.contact"
+  />
   <label class="edit-label" for="bio">Bio</label>
-  <input type="text" name="bio" id="bio" />
+  <input type="text" name="bio" id="bio" [ngModel]="userProfile.bio" />
   <button (click)="goToItems()" class="update-btn">Update</button>
 </form>
