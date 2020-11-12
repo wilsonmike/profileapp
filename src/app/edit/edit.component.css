@@ -1,0 +1,24 @@
+.edit-form {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.edit-label {
+  color: #1ecefd;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.update-btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #505355;
+  height: 30px;
+}
